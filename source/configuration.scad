@@ -39,6 +39,14 @@ lme8uu = false;
 
 // Nuts and bolts
 
+m3_diameter = 3 / cos(180 / 8) + 0.4;
+m3_radius = m3_diameter / 2;
+
+m3_nut_diameter = 5.5 / cos(180 / 6) + 0.4;
+m3_nut_radius = m3_nut_diameter / 2;
+
+m3_nut_depth = 2.5;
+
 // m8_diameter = 0;
 // m8_nut_diameter = 0;
 
