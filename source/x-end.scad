@@ -24,7 +24,7 @@ slot_width=1;
 
 pad_height=6.5;
 pad_width=7;
-pad_connector_height=3.3;
+pad_connector_height=2;
 bushing_support_width=17;
 rod_support_width=10;
 
@@ -58,7 +58,7 @@ module xend_side(closed_end=true)
 			// Base of the stuff to cut pres fit mechanism (need some cutouts)
 			union (){
 				// Basic teardrop cutout
-				#translate([0,-1,0]) rotate(90) teardropcentering(axis_diameter_larger,closed_end?xend_length-1:xend_length+2);
+				translate([0,-1,0]) rotate(90) teardropcentering(axis_diameter_larger,closed_end?xend_length-1:xend_length+2);
 			
 				// Main holes thru the bottom
 				translate([axis_diameter_larger,0,0]) rotate([0,8,0]) translate([-axis_diameter_larger,solid_end_width,-xend_height/2-1]) cube([axis_diameter_larger,xend_length-2*solid_end_width,xend_height/2+1]);
@@ -67,7 +67,7 @@ module xend_side(closed_end=true)
 			}
 			
 			// Pad connector
-			translate([-axis_diameter_larger-1,solid_end_width+slot_width,-xend_height/2])
+			#translate([-axis_diameter_larger-1,solid_end_width+slot_width,-xend_height/2])
 			cube([axis_diameter_larger,xend_length-2*solid_end_width-2*slot_width,pad_connector_height]);
 
 			difference(){
@@ -82,7 +82,7 @@ module xend_side(closed_end=true)
 				translate([-slot_width,solid_end_width,-xend_height/2-1])
 				cube([slot_width,xend_length-2*solid_end_width,xend_height/2+1]);
 				// hack for a taper opening
-				#translate(v=[0,15,1.1]) rotate(a=90,v=[1,0,0]) cylinder(r1=axis_diameter_larger, r2=axis_diameter_larger+1.5,h=15, $fn=30);
+				translate(v=[0,15,1.1]) rotate(a=90,v=[1,0,0]) cylinder(r1=axis_diameter_larger, r2=axis_diameter_larger+1.5,h=15, $fn=30);
 			}
 		}
 		
@@ -125,9 +125,9 @@ difference()
 		translate([0,10,32.5]) 
 		cube([22.5,22.5,70],center=true);
 
-		translate([0,-10,5+29]) #cube([2,8,10],center=true);
-			translate([0,-10,5+29-11]) #cube([2,8,10],center=true);
-			translate([0,-10,3.25]) #cube([2,8,6.5],center=true);
+		translate([0,-10,5+29]) cube([2,8,10],center=true);
+			translate([0,-10,5+29-11]) cube([2,8,10],center=true);
+			translate([0,-10,3.25]) cube([2,8,6.5],center=true);
 
 		//Rod hole.
 		difference()
