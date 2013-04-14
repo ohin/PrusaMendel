@@ -38,7 +38,7 @@ nutH = 3;
 corner_cut = 26;
 
 studding_dia = 8.0;
-shaft_dia = 7.0;
+shaft_dia = 5.0;
 
 module coupling(c){
     union(){
