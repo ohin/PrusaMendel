@@ -1,7 +1,5 @@
 openscad -o metric-prusa/bar-clamp.stl source/bar-clamp.scad
 openscad -o metric-prusa/bearing-guide.stl source/bearing-guide.scad
-openscad -o metric-prusa/belt-clamp-nut-holder.stl source/belt-clamp-nut-holder.scad
-openscad -o metric-prusa/belt-clamp.stl source/belt-clamp.scad
 openscad -o metric-prusa/coupling.stl source/coupling.scad
 openscad -o metric-prusa/endstop-holder.stl source/endstop-holder.scad
 openscad -o metric-prusa/frame-vertex.stl -D 'basefoot=false' source/frame-vertex.scad
@@ -14,9 +12,10 @@ openscad -o metric-prusa/sanguinololu-holder.stl source/sanguinololu-holder.scad
 openscad -o metric-prusa/wade.stl source/wade.scad
 openscad -o metric-prusa/wade-big.stl source/wade-big.scad
 openscad -o metric-prusa/wade-small.stl source/wade-small.scad
-openscad -o metric-prusa/x-carriage.stl source/x-carriage.scad
+openscad -o metric-prusa/x-carriage-gregs.stl source/x-carriage.scad
 openscad -o metric-prusa/x-end-idler.stl source/x-end-idler.scad
 openscad -o metric-prusa/x-end-motor.stl source/x-end-motor.scad
 openscad -o metric-prusa/y-bushing.stl source/y-bushing.scad
 openscad -o metric-prusa/ybrac-t.stl source/ybrac-t.scad
 openscad -o metric-prusa/z-motor-mount.stl source/z-motor-mount.scad
+openscad -o metric-prusa/y-belt-clamp.stl source/y-belt-clamp.scad
