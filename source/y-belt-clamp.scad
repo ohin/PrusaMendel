@@ -2,7 +2,7 @@ belt_pitch = 5;
 belt_width = 6.2;
 belt_height = 3.8;
 
-hole_spacing = 18;
+hole_spacing = 14;
 
 ram_length = 1.5;
 
@@ -15,7 +15,7 @@ m3_nut_radius = m3_nut_diameter / 2;
 m3_nut_depth = 2.5;
 
 wall = 3;
-extrusion_width = 0.4;
+extrusion_width = 0.7;
 
 clamp_height = 3.5;
 belt_depth = 2;
@@ -78,6 +78,8 @@ module ram() {
 
 clamp_base();
 translate([wall * 2 + m3_diameter + 2, 0, 0]) clamp_top();
+translate([-wall * 4 - m3_diameter * 2 - 4, 0, 0]) clamp_top();
+translate([-wall * 6 - m3_diameter * 3 - 6, 0, 0]) clamp_trap();
 translate([-wall * 2 - m3_diameter - 2, 0, 0]) clamp_trap();
 translate([wall * 4 + m3_diameter * 2 + 3, -belt_width, 0]) ram();
 translate([wall * 4 + m3_diameter * 2 + 3, belt_width, 0]) ram();
