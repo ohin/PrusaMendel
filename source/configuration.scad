@@ -18,7 +18,7 @@ include <metric.scad>;
 // CUSTOM CUSTOM CUSTOM CUSTOM CUSTOM CUSTOM CUSTOM CUSTOM CUSTOM
 
 thin_wall = 3;
-
+layer_height = 0.38;
 
 // Linear bearing version
 linear = false;
