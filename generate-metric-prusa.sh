@@ -12,7 +12,7 @@ openscad -o metric-prusa/sanguinololu-holder.stl source/sanguinololu-holder.scad
 openscad -o metric-prusa/wade.stl source/wade.scad
 openscad -o metric-prusa/wade-big.stl source/wade-big.scad
 openscad -o metric-prusa/wade-small.stl source/wade-small.scad
-openscad -o metric-prusa/x-carriage-gregs.stl source/x-carriage.scad
+openscad -o metric-prusa/x-carriage.stl source/x-carriage-igus.scad
 openscad -o metric-prusa/x-end-idler.stl source/x-end-idler.scad
 openscad -o metric-prusa/x-end-motor.stl source/x-end-motor.scad
 openscad -o metric-prusa/y-bushing.stl source/y-bushing.scad
