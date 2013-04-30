@@ -45,8 +45,9 @@ lme8uu = false;
 // m4_diameter = 0;
 // m4_nut_diameter = 0;
 
-// m3_diameter = 0;
-// m3_nut_diameter = 0;
+m3_diameter = 3.8;
+m3_nut_diameter = 5.8;
+m3_nut_diameter_horizontal = 6.6;
 
 // Bushing holder
 
